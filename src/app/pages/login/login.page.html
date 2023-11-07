@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="mycolor">
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding" >
+
+  <h2  class="h2-space" class="ion-text-center">Bienvenido</h2>
+  
+  <ion-item class="add-space">
+    <ion-label position="floating">Usuario</ion-label>
+    <ion-input type="text" placeholder="Ingrese su nombre de usuario" [(ngModel)]="user.usuario" minlength="3" maxlength="8" required (input)="validateForm()"></ion-input>
+  </ion-item>
+
+  <ion-item class="add-space">
+    <ion-label positION="floating">Contraseña</ion-label>
+    <ion-input type="password" placeholder="Ingrese contraseña" [(ngModel)]="user.password"  maxlength="4" required (input)="validateForm()"></ion-input>
+  </ion-item>
+
+  <ion-button  shape="block" color="mycolor" (click)="Ingresar()" [disabled]="!isFormValid">Ingresar</ion-button>
+
+</ion-content>

@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="mycolor">
+    <ion-buttons>
+    <ion-menu-button></ion-menu-button>
+    <ion-title>Perfil</ion-title>
+    </ion-buttons>    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">  
+
+  <ion-list class="container-profile" [inset]="true">
+      <ion-item >
+        <img alt="Foto de perfil" src="https://i.pinimg.com/736x/89/2f/ee/892fee123f528944eb340aff42b15e2b.jpg" />
+      </ion-item>
+    </ion-list>
+
+    <ion-list class="container-profile" [inset]="true">
+      <ion-item>
+        <h2>Hola Camila</h2>
+      </ion-item>
+    </ion-list>
+      
+      
+
+    <ion-content color="light">
+      <ion-list [inset]="true">
+        <ion-item>
+          <ion-input label="Nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input label="Apellidos"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-toggle>
+            <ion-label>Permitir Notificaciones</ion-label>
+            <ion-note color="medium">Desuscribirse en cualquier momento</ion-note>
+          </ion-toggle>
+        </ion-item>
+      </ion-list>      
+    </ion-content>
+
+</ion-content>

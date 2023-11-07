@@ -1,0 +1,33 @@
+ion-toolbar{
+    background-color: var(--ion-color-mycolor);   
+  }
+
+  .button-inner{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+
+  ion-menu-button{
+    color: white;
+  }
+
+  ion-title{
+    color: white;
+  }
+    
+
+
+ img{
+  width: 200px; 
+  height: 200px;
+  border-radius:60%;
+  object-fit: cover;
+  object-position: center;}
+
+
+.container-profile{
+  display: flex;
+  justify-content: center;
+}

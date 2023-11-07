@@ -1,5 +1,5 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="mycolor">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
@@ -8,14 +8,26 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">{{ folder }}</ion-title>
-    </ion-toolbar>
-  </ion-header>
+        <ion-card [routerLink]="['/lista-tareas']">
+          <div class="ion-img-task">
+          </div>
+          <!-- <img alt="Silhouette of mountains" src="#" /> -->
+          <ion-card-header>
+            <ion-card-title>Ver tareas de día</ion-card-title>
+            <ion-card-subtitle>Task</ion-card-subtitle>            
+          </ion-card-header>
+        </ion-card>
 
-  <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+      <ion-card [routerLink]="['/diario']">
+        <div class="ion-img-diary">
+        </div>
+        <!-- <img alt="Silhouette of mountains" src="#" /> -->
+        <ion-card-header>
+          <ion-card-title>Visita tu diario</ion-card-title>
+          <ion-card-subtitle>Diario</ion-card-subtitle>          
+        </ion-card-header>
+      </ion-card>
+
+
+
 </ion-content>
